@@ -1,0 +1,24 @@
+  {
+ "name": "X-News-V1 ",  
+    "description": "whatsapp news bot build with nodejs",  
+    "repository": "https://github.com/JithulaB/X-News-V1",  
+    "logo": "https://avatars.githubusercontent.com/u/161597041?v=4",  
+    "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device", "news bot"],  
+    "buildpacks": [  
+      {  
+        "url": "heroku/nodejs"  
+      },  
+      {  
+        "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"  
+      },  
+      {  
+        "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"  
+      }  
+    ],  
+     "formation": {  
+          "worker": {  
+              "quantity": 1,  
+              "size": "eco"  
+          }  
+      }  
+}
